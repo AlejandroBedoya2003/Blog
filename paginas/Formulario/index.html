@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Formulario Minutos Hector</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <section class="form_wrap">
+        <section class="contact_info">
+            <section class="info_title">
+                <span class="fa fa-user-circle"></span>
+                <h2>MINUTOS<br>HECTOR</h2>
+                <h1>Información <br>de contacto</h1>
+            </section>
+            <section class="info_items">
+                <p><span class="fa fa-envelope"></span>AlejandroMoreno591@gmail.com</p>
+                <p><span class="fa fa-mobile"></span>3381510</p>
+            </section>
+        </section>
+        <form action="enviar.php" method="POST" class="form_contact">
+            <h2>Envia un mensaje</h2>
+            <div class="user_info">
+                <label for="names">Nombres*</label>
+                <input type="text" id="names" name="nombre" required>
+                
+                <label for="phone">Telefono/Celular</label>
+                <input type="text" id="phone" name="telefono" required>
+                
+                <label for="email">Correo electronico*</label>
+                <input type="text" id="email" name="correo" required >
+                
+                <label for="mensaje">Mensaje*</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <input type="submit" value="Enviar Mensaje" id="btnSend">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
+
